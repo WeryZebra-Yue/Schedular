@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TakeTaskData">
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Title"
+        android:inputType="textPersonName"
+        tools:layout_editor_absoluteX="101dp"
+        tools:layout_editor_absoluteY="195dp" />
+
+    <EditText
+        android:id="@+id/subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Subject"
+        android:inputType="textPersonName" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Batch"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/batch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/AllBatch"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="All Batch" />
+
+        <RadioButton
+            android:id="@+id/BatchA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batch A" />
+
+        <RadioButton
+            android:id="@+id/BatchB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batch B" />
+
+        <RadioButton
+            android:id="@+id/BatchC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Batch C" />
+
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Date" />
+
+    <EditText
+        android:id="@+id/date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Type"
+        android:textAlignment="center" />
+
+    <RadioGroup
+        android:id="@+id/Type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/Assign"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Assignment" />
+
+        <RadioButton
+            android:id="@+id/Exam"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exam" />
+
+        <RadioButton
+            android:id="@+id/annoucment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Annoucment" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Description"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/newtask"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add Task" />
+</LinearLayout>
